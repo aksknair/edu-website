@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar i {
+    padding: 20px 25px;
+    color: aqua;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar i::after {
+    justify-content: center;
+    align-items: center;
+    content: '|';
+    color: grey;
+    margin-left: 35px;
+    font-size: 23px;
+}
+
+.nav-list {
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 25px 30px;
+    font-size: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.nav-list li a::after {
+    content: '';
+    display: block;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: aqua; /* Color of the underline */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust the vertical position of the underline */
+    width: 100%; /* Full width of the link */
+    transform: scaleX(0); /* Initial state to hide the underline */
+    transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+.nav-list li a:hover::after {
+    transform: scaleX(1); /* Reveal the underline on hover */
+}
+
+.rightNav {
+    width: 20%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: flex-end; /* Align to the right */
+    text-align: right;
+    padding: 5px;
+}
+
+.rightNav i {
+    padding: 0px;
+    color: aqua;
+    margin-left: 15px; /* Optional: Set margin if needed */
+}
+
+.rightNav i::after {
+    content: ''; /* Remove separator for icons in rightNav */
+}
+
+.rightNav input[type="text"] {
+    padding: 10px;
+    font-size: 12px;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    width: 150px;
+    margin-left: -20px;
+    outline: none;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(../img/bg1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+
+.firstHalf {
+    width: 80;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondHalf {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.secondHalf img {
+    height: 200px;
+    width: auto;
+    border-radius: 200px;
+    border: 4px solid white;
+    margin-left: 90px;
+}
+
+.text-big {
+    font-size: 33px;
+    padding: 16px 0;
+}
+
+.text-small {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    padding: 5px 0;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn:hover {
+    background: white;
+    /* color: black; */
+    font-weight: bold;
+    color: red;
+    opacity: 0.7;
+}
+
+.separator {
+    color: aqua;
+    font-size: 20px;
+}
+
+.thumbnail img {
+    height: 200px;
+    width: auto;
+    border-radius: 33px;
+    border: 4px solid white;
+    margin: 35px;
+}
+
+.section {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section-left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 0px 65px;
+}
+
+.contact {
+    background-color: #f6f5f4;
+    height: 65vh;
+}
+
+.text-center {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Basic styling for the form section */
+.form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items horizontally */
+    padding: 0;          /* Add padding around the form */
+    box-sizing: border-box;
+}
+
+/* Wrapper for each input and its icon */
+.input-wrapper {
+    position: relative; /* Establish positioning context for the icon */
+    width: 100%; /* Adjust as needed */
+    max-width: 400px; /* Optional: set a max width for the inputs */
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+/* Style the icon */
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Space from the left edge of the input/textarea */
+    transform: translateY(-50%); /* Center icon vertically */
+    color: #999; /* Icon color */
+}
+
+/* Special styling for the textarea icon */
+.textarea-icon {
+    top: 10px; /* Space from the top edge of the textarea */
+    transform: none; /* Remove vertical centering */
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px 10px 10px 40px; /* Add padding on the left to make space for the icon */
+    width: 100%; /* Full width of the wrapper */
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for the input text */
+    outline: none; /* Remove default focus outline */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Additional styling for textarea */
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    /* overflow: auto; Add scrollbars if content overflows */
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.btn-dark {
+    padding: 6px 20px;
+    margin: 0;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    color: black;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn-dark:hover {
+    background: aqua;
+    /* color: black; */
+    font-weight: bold;
+    color: black;
+}
+
+.text-footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+}
+
+/* Responsive code ------------------- */
