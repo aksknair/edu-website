@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f5a861caa8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>iEducation - Online Education</title>
     
 </head>
 <body>
-    <nav class="navbar background">
-        <ul class="nav-list">
+    <nav class="navbar background h-nav-resp">
+        <ul class="navList v-class-resp">
             <!-- <div class="logo"><img src="img/img.jpg" alt="logo"></div> -->
             <i class="fa-solid fa-laptop"> EDU</i>
             <li><a href="#home">Home</a></li>
@@ -18,31 +18,36 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
-        <div class="rightNav">
+        <div class="rightNav v-class-resp">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" name="search" id="search" placeholder="Search">
             <!-- <button class="btn btn-sm">Search</button> -->
         </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </nav>
-    <section class="background firstSection">
+    <section class="background firstSection" id="home">
         <div class="box-main">
             <div class="firstHalf">
                 <h2 class="text-big">The Future of Education is Here :</h2>
                 <p class="text-small">The future of education features immersive technologies like VR and AR, AI-driven personalized learning, and global online access. Gamification and interactive tools enhance engagement, while digital platforms foster collaboration, making learning more accessible, adaptive, and dynamic for diverse needs.</p>
-                <div>
+                <div class="buttons">
                     <button class="btn">Subscribe</button>
                     <span class="separator">|</span>
                     <button class="btn">Watch Video</button>
                 </div>
             </div>
             <div class="secondHalf">
-                <img src="img/img1.jpg" alt="Laptop image">
+                <img src="../img/img1.jpg" alt="Laptop image">
             </div>
         </div>
     </section>
     
 
-    <section class="section">
+    <section class="section" id="services">
         <div class="paras">
             <h2 class="sectionTag text-big">Education in India :</h2>
                 <p class="sectionSubTag text-small">Education in India has a rich and complex history, marked by significant progress and challenges. The Indian education system is one of the largest in the world, encompassing diverse types of institutions and curricula across its vast geographical expanse. It is characterized by a blend of traditional and modern methods, with emphasis on both academic and vocational training.
@@ -52,7 +57,7 @@
                 Higher education in India is well-developed, with numerous prestigious institutions such as the Indian Institutes of Technology (IITs) and Indian Institutes of Management (IIMs). Despite advancements, challenges such as overcrowded classrooms, inadequate infrastructure, and the need for curriculum reforms remain.</p>
         </div>
         <div class="thumbnail">
-            <img src="img/img2.jpg" alt="laptop image" class="imgFluid">
+            <img src="../img/img2.jpg" alt="laptop image" class="imgFluid">
         </div>
     </section>
     <section class="section section-left">
@@ -65,7 +70,7 @@
                 Higher education is robust in many developed nations, offering diverse opportunities and strong research facilities, whereas India’s higher education system, though prestigious in parts, faces issues like limited access and varying standards. Overall, while India is advancing, global comparisons highlight areas for improvement.</p>
         </div>
         <div class="thumbnail">
-            <img src="img/img3.jpg" alt="laptop image" class="imgFluid">
+            <img src="../img/img3.jpg" alt="laptop image" class="imgFluid">
         </div>
     </section>
     <section class="section">
@@ -78,11 +83,11 @@
                 Furthermore, global organizations and governments should work together to set and achieve common educational goals, ensuring equitable access and quality standards. By combining resources, knowledge, and efforts, countries can collectively advance educational opportunities, drive innovation, and improve learning outcomes worldwide.</p>
         </div>
         <div class="thumbnail">
-            <img src="img/img4.jpg" alt="laptop image" class="imgFluid">
+            <img src="../img/img4.jpg" alt="laptop image" class="imgFluid">
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="text-center">Contact Us :</h2>
         <div class="form">
             <div class="input-container">
@@ -114,5 +119,6 @@
                 Copyright &copy; 2024 www.iEducate.com - All rights reserved
             </p>
         </footer>
+        <script src="../js/resp.js"></script>
 </body>
 </html>
